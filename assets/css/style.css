@@ -1,51 +1,155 @@
+/* flex box, media queries, CSS variables */
 :root{
   --FirstC: #055a39;
   --SecondC: #f3a51a;
   --ThirdC: #B40C52;
   --Highlight: #00878a;
+  --borders: 2px solid #192d50;
+  --br: 10px;
 }
 
+*{
+  background-color:azure
+}
 
 header{  
-  display:flex;
+display:flex;
+background-color: var(--Highlight);
+overflow: hidden;
+height:190px;
+justify-content: space-between;
+align-items: center;
+padding: 2px;
+border: var(--borders);
+border-radius: var(--br);
+}
+
+header h1{
   background-color: var(--Highlight);
+}
+
+.logo{
+  background-color: var(--Highlight);
+  index:2;
+}
+
+.logo img{
+  
+  position:relative;
+  padding: 50px;
+  margin: 50px;
+  top: 0px;
+  left: 0px;
+  height: 50%;
+  z-index: 2;
+  background-color: var(--Highlight);
+}
+
+nav{
+  background-color: var(--Highlight);
+  border-radius: var(--br);
+}
+
+nav button{
+  /* background: var(--Highlight); */
+  display:block;
   overflow: hidden;
-  height:190px;
-  justify-content: space-between;
-  align-items: center;
+  margin: 20px;
+  height: 40px;
+  width: 300px;
+  padding:0 auto;
+  Border:var(--borders);
+  border-radius: var(--br)
+}
+
+.Link1, .Link2, .Link3{
+font-size:large;
+border-radius: var(--br);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.Link1{
+background-color: var(--FirstC);
+}
+
+.Link2{
+  background-color: var(--SecondC);
+}
+
+.Link3{
+  background-color: var(--ThirdC);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page-section{
+  margin:10px;
+  color: red;
+}
+
+#work{
+  margin:10px;;
+  color:purple;
+  display:grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: 
+  "p1 p1 p2 p2 p3"
+  "p5 p5 p5 p4 p3";
+}
+
+.Pic1, .Pic2, .Pic3, .Pic4, .Pic5{
   padding: 2px;
   border: var(--borders);
-  border-radius: var(--br);
-  }
-  
-  header h1{
-    background-color: var(--Highlight);
-  }
-  
-  nav{
-    background-color: var(--Highlight);
-    border-radius: var(--br);
-  }
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  height:100%;
+  width:100%;
+  display: flex;
+  align-items:flex-end;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-p {
-  margin: 0;
+.Pic1{
+  grid-area:p1;
+  background-color:var(--FirstC)
+  }
+  .Pic2{
+    grid-area:p2;
+    background-color: var(--SecondC)
+  }
+  .Pic3{
+    grid-area:p3;
+    background-color: var(--ThirdC);
+  }
+  .Pic4{
+    grid-area:p4;
+    background-color: var(--FirstC);
+  }
+  .Pic5{
+    grid-area:p5;
+    background-image: url("../images/02-hero-bg.jpg");
+        
+  }
+.Pic5 h1{
+  background: var(--ThirdC);
+}
+.Pic5 h2{
+  background: var(--ThirdC);
 }
 
-.bold {
-  font-weight:bold;
-
-}
+  #contact{
+    color: orange;
+  }
 
 
 h1,
