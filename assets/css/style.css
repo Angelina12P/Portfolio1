@@ -1,51 +1,51 @@
 :root{
-    --FirstC: #055a39;
-    --SecondC: #f3a51a;
-    --ThirdC: #B40C52;
-    --Highlight: #00878a;
+  --FirstC: #055a39;
+  --SecondC: #f3a51a;
+  --ThirdC: #B40C52;
+  --Highlight: #00878a;
+}
+
+
+header{  
+  display:flex;
+  background-color: var(--Highlight);
+  overflow: hidden;
+  height:190px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border: var(--borders);
+  border-radius: var(--br);
   }
   
-  
-  header{  
-    display:flex;
+  header h1{
     background-color: var(--Highlight);
-    overflow: hidden;
-    height:190px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px;
-    border: var(--borders);
+  }
+  
+  nav{
+    background-color: var(--Highlight);
     border-radius: var(--br);
-    }
-    
-    header h1{
-      background-color: var(--Highlight);
-    }
-    
-    nav{
-      background-color: var(--Highlight);
-      border-radius: var(--br);
-    }
-  
-  
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
   }
-  
-  p {
-    margin: 0;
-  }
-  
-  .bold {
-    font-weight:bold;
-  
-  }
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.bold {
+  font-weight:bold;
+
+}
 
 
 h1,
