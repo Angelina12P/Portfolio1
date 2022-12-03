@@ -122,28 +122,34 @@ body {
 
 .Pic1{
   grid-area:p1;
-  background-color:var(--FirstC)
+  background-image: url('/assets/Images/Coloured/Running\ coloured.png');
+  /* background-color:var(--FirstC) */
   }
   .Pic2{
     grid-area:p2;
-    background-color: var(--SecondC)
+    background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
+    /* background-color: var(--SecondC) */
   }
   .Pic3{
     grid-area:p3;
+    background-image: url('/assets/Images/Pointing.png');
     background-color: var(--ThirdC);
   }
   .Pic4{
     grid-area:p4;
+    background-image: url('/assets/Images/Coloured/LED\ coloured.png');
     background-color: var(--FirstC);
   }
   .Pic5{
     grid-area:p5;
-    background-color: var(--ThirdC);
+    background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
+    /* background-color: var(--ThirdC); */
   }
 
   .Pic6{
     grid-area:p6;
-    background-color: var(--SecondC);
+    background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
+    /* background-color: var(--SecondC); */
   }
 
   .Pic1 h1, .Pic1 h2{
