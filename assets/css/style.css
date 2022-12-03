@@ -15,7 +15,9 @@
 header{  
 display:flex;
 /* background-color: var(--Highlight); */
-/* background-image: ; */
+background-image: url('/assets/Images/Header\ possibility.png');
+background-repeat: no-repeat; 
+background-position: center; 
 overflow: hidden;
 height:190px;
 justify-content: space-between;
@@ -26,7 +28,7 @@ border-radius: var(--br);
 }
 
 header h1{
-  background-color: var(--Highlight);
+  background-color: #00888a00;
 }
 
 .logo{
@@ -47,7 +49,7 @@ header h1{
 }
 
 nav{
-  background-color: var(--Highlight);
+  background-color: #00888a00;
   border-radius: var(--br);
 }
 
@@ -71,14 +73,17 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
 .Link1{
+background-image: url('/assets/Images/button\ top_.png');
 background-color: var(--FirstC);
 }
 
 .Link2{
+background-image: url('/assets/Images/button\ middle.png');
   background-color: var(--SecondC);
 }
 
 .Link3{
+  background-image: url('/assets/Images/button\ bottom.png');
   background-color: var(--ThirdC);
 }
 
@@ -115,9 +120,7 @@ body {
   /* width:100%; */
   /* display: flex; */
   /* align-items:flex-end; */
-  /* margin-bottom: 20px; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  /* margin-bottom: 20px;  */
 }
 
 .Pic1{
