@@ -14,7 +14,8 @@
 
 header{  
 display:flex;
-background-color: var(--Highlight);
+/* background-color: var(--Highlight); */
+/* background-image: ; */
 overflow: hidden;
 height:190px;
 justify-content: space-between;
@@ -102,21 +103,21 @@ body {
   grid-template-rows: 300px 300px;
   grid-template-areas: 
   "p1 p1 p2 p2 p3"
-  "p5 p5 p5 p4 p3";
+  "p6 p5 p5 p4 p3";
 }
 
-.Pic1, .Pic2, .Pic3, .Pic4, .Pic5{
+.Pic1, .Pic2, .Pic3, .Pic4, .Pic5, .Pic6 {
   padding: 2px;
   border: var(--borders);
   border-radius: 10px;
   box-shadow: 10px 10px 5px #aaaaaa;
-  height:100%;
-  width:100%;
-  display: flex;
-  align-items:flex-end;
-  margin-bottom: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* height:100%; */
+  /* width:100%; */
+  /* display: flex; */
+  /* align-items:flex-end; */
+  /* margin-bottom: 20px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 }
 
 .Pic1{
@@ -137,14 +138,37 @@ body {
   }
   .Pic5{
     grid-area:p5;
-    background-image: url("../images/02-hero-bg.jpg");
-        
+    background-color: var(--ThirdC);
   }
-.Pic5 h1{
+
+  .Pic6{
+    grid-area:p6;
+    background-color: var(--SecondC);
+  }
+
+  .Pic1 h1, .Pic1 h2{
+    background: var(--FirstC);
+  }
+
+  .Pic2 h1, .Pic2 h2{
+    background: var(--SecondC);
+  }
+
+  .Pic3 h1, .Pic3 h2{
+    background: var(--ThirdC);
+  }
+
+  .Pic4 h1, .Pic4 h2{
+    background: var(--FirstC);
+  }
+
+
+.Pic5 h1, .Pic5 h2{
   background: var(--ThirdC);
 }
-.Pic5 h2{
-  background: var(--ThirdC);
+
+.Pic6 h1, .Pic6 h2{
+  background: var(--SecondC);
 }
 
   #contact{
@@ -152,8 +176,12 @@ body {
   }
 
 
-h1,
-h2,
+h1{
+font-size:x-large
+}
+h2{
+  font-size:medium;
+}
 h3,
 h4,
 h5,
