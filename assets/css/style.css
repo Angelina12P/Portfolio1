@@ -1,3 +1,8 @@
+*{
+  border: 1px solid red;
+  background-color: azure;
+}
+
 /* flex box, media queries, CSS variables */
 :root{
   --FirstC: #055a39;
@@ -9,18 +14,11 @@
   --br: 10px;
   --shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   --lift: 10px 10px 5px #aaaaaa;
+  --dark: #192d50;
 }
 
-*{
-  background-color:azure
-}
-
-header{  
-  display:flex;
-  /* background-color: var(--Highlight); */
+#hero-banner{  
   background-image: url('/assets/Images/Header\ possibility.png');
-  /* background-repeat: no-repeat;  */
-  /* background-position: center;  */
   background-size: cover;
   /* overflow: hidden; */
   height:190px;
@@ -29,15 +27,15 @@ header{
   padding: 2px;
   border-top: var(--borders);
   border-bottom: var(--borders);
-  /* border-radius: var(--br); */
 }
 
-header h1{
+#hero-banner h1{
   background-color: var(--Hide);
 }
 
 .logo{
   position:fixed;
+  left: -60px;
   background: var(--Hide);
   height:250px;
   width:200px;
@@ -54,20 +52,17 @@ header h1{
 }
 
 nav{
-  background-color: var(--Hide);
-  border-radius: var(--br);
+  background-color: var(--dark);
 }
 
 nav button{
-  /* background: var(--Highlight); */
-  display:block;
   overflow: hidden;
-  margin: 20px;
+  margin: 10px;
   height: 40px;
   width: 300px;
   padding:0 auto;
   Border:var(--borders);
-  border-radius: var(--br);
+  
 }
 
 .Link1, .Link2, .Link3{
@@ -193,7 +188,7 @@ background-color: #00878a;
 }
 
 footer{
-  background-color: #00878a;
+  background-color: var(--dark)
 }
 
 h1{
