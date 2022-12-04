@@ -1,0 +1,238 @@
+*{
+    border: 1px solid red;
+    background-color: azure;
+  }
+  
+  /* flex box, media queries, CSS variables */
+  :root{
+    --FirstC: #055a39;
+    --SecondC: #f3a51a;
+    --ThirdC: #B40C52;
+    --Highlight: #00878a;
+    --Hide: rgba(255, 255, 255, 0);
+    --borders: 3px solid #192d50;
+    --br: 10px;
+    --shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    --lift: 10px 10px 5px #aaaaaa;
+    --dark: #192d50;
+  }
+ 
+  .gridtry{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 50px 200px 1fr 100px; 
+    /* gap: 0px 0px;  */
+    grid-template-areas: 
+      "hn hn hn"
+      "ba ba ba"
+      "la ab ab"
+      "wt wt wt"; 
+  }
+  
+  header { 
+    grid-area: hn; 
+  }
+  
+  #hero-banner { 
+    grid-area: ba; 
+    background-image: url('/assets/Images/Header\ possibility.png');
+    background-size: cover;
+    /* overflow: hidden; */
+    height:190px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    border-top: var(--borders);
+    border-bottom: var(--borders);
+  }
+
+  .logo{
+    position:fixed;
+    left: -60px;
+    background: var(--Hide);
+    height:250px;
+    width:200px;
+  }
+  
+  .logo img{
+    justify-content:flex-start;
+    align-items: center;
+    padding:20px;
+    margin: 4px;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--Hide);
+  }
+  
+  nav{
+    background-color: var(--dark);
+  }
+  
+  nav button{
+    overflow: hidden;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    padding:0 auto;
+    Border:var(--borders);
+    
+  }
+  
+  .Link1, .Link2, .Link3{
+    font-size:large;
+    border-radius: var(--br);
+    box-shadow: var(--shadow);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .Link1{
+    background-image: url('/assets/Images/button\ top_.png');
+    background-color: var(--FirstC);
+  }
+  
+  .Link2{
+    background-image: url('/assets/Images/button\ middle.png');
+    background-color: var(--SecondC);
+  }
+  
+  .Link3{
+    background-image: url('/assets/Images/button\ bottom.png');
+    background-color: var(--ThirdC);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+
+
+
+
+
+  #about { 
+    grid-area: ab; 
+  }
+  
+  .logoarea { 
+    grid-area: la;
+    background:black; 
+  }
+  
+  .wt { 
+    grid-area: wt; 
+  }
+  
+
+#work{
+  margin:10px;;
+  color:purple;
+  display:grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: 
+  "p1 p1 p2 p2 p3"
+  "p6 p5 p5 p4 p3";
+}
+
+.Pic1, .Pic2, .Pic3, .Pic4, .Pic5, .Pic6 {
+  padding: 2px;
+  border: var(--borders);
+  border-radius: 10px;
+  box-shadow: var(--lift);
+  background-position: center;
+  background-size: cover;
+  /* height:100%; */
+  /* width:100%; */
+  /* display: flex; */
+  /* align-items:flex-end; */
+  /* margin-bottom: 20px;  */
+}
+
+.Pic1{
+  grid-area:p1;
+  background-image: url('/assets/Images/Coloured/Running\ coloured.png');
+  /* background-color:var(--FirstC) */
+  }
+  
+.Pic2{
+  grid-area:p2;
+  background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
+  /* background-color: var(--SecondC) */
+}
+
+.Pic3{
+  grid-area:p3;
+  background-image: url('/assets/Images/Pointing.png');
+  background-color: var(--ThirdC);
+}
+
+.Pic4{
+  grid-area:p4;
+  background-image: url('/assets/Images/Coloured/LED\ coloured.png');
+  /* background-color: var(--FirstC); */
+}
+
+.Pic5{
+  grid-area:p5;
+  background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
+  /* background-color: var(--ThirdC); */
+}
+
+.Pic6{
+  grid-area:p6;
+  background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
+  /* background-color: var(--SecondC); */
+}
+
+.Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2{
+  background: var(--FirstC);
+}
+
+.Pic2 h1, .Pic2 h2, .Pic6 h1, .Pic6 h2{
+  background: var(--SecondC);
+}
+
+.Pic3 h1, .Pic3 h2, .Pic5 h1, .Pic5 h2{
+  background: var(--ThirdC);
+}
+
+#contact{
+color: orange;
+background-color: #00878a;
+}
+
+footer{
+  background-color: var(--dark)
+}
+
+h1{
+font-size:x-large;
+background-color:var(--Hide);
+}
+
+h2, p {
+  font-size:medium;
+  background-color:var(--Hide);
+}
+
+
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.bold {
+  font-weight:bold;
+}

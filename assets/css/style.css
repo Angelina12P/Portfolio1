@@ -17,7 +17,24 @@
   --dark: #192d50;
 }
 
-#hero-banner{  
+.gridtry{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 50px 200px 1fr 100px; 
+  /* gap: 0px 0px;  */
+  grid-template-areas: 
+    "hn hn hn"
+    "ba ba ba"
+    "la ab ab"
+    "wt wt wt"; 
+}
+
+header { 
+  grid-area: hn; 
+}
+
+#hero-banner { 
+  grid-area: ba; 
   background-image: url('/assets/Images/Header\ possibility.png');
   background-size: cover;
   /* overflow: hidden; */
@@ -27,10 +44,6 @@
   padding: 2px;
   border-top: var(--borders);
   border-bottom: var(--borders);
-}
-
-#hero-banner h1{
-  background-color: var(--Hide);
 }
 
 .logo{
@@ -95,91 +108,97 @@ body {
   line-height: 1.5;
 }
 
-.page-section{
-  margin:80px;
-  color: red;
+
+
+
+
+
+#about { 
+  grid-area: ab; 
 }
 
-#about{
-    align-items: center;
+.logoarea { 
+  grid-area: la;
+  background:black; 
 }
 
-#about p{
-  align-items:right;
+.wt { 
+  grid-area: wt; 
 }
+
 
 #work{
-  margin:10px;;
-  color:purple;
-  display:grid;
-  gap: 1em;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  grid-template-areas: 
-  "p1 p1 p2 p2 p3"
-  "p6 p5 p5 p4 p3";
+margin:10px;;
+color:purple;
+display:grid;
+gap: 1em;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 300px 300px;
+grid-template-areas: 
+"p1 p1 p2 p2 p3"
+"p6 p5 p5 p4 p3";
 }
 
 .Pic1, .Pic2, .Pic3, .Pic4, .Pic5, .Pic6 {
-  padding: 2px;
-  border: var(--borders);
-  border-radius: 10px;
-  box-shadow: var(--lift);
-  background-position: center;
-  background-size: cover;
-  /* height:100%; */
-  /* width:100%; */
-  /* display: flex; */
-  /* align-items:flex-end; */
-  /* margin-bottom: 20px;  */
+padding: 2px;
+border: var(--borders);
+border-radius: 10px;
+box-shadow: var(--lift);
+background-position: center;
+background-size: cover;
+/* height:100%; */
+/* width:100%; */
+/* display: flex; */
+/* align-items:flex-end; */
+/* margin-bottom: 20px;  */
 }
 
 .Pic1{
-  grid-area:p1;
-  background-image: url('/assets/Images/Coloured/Running\ coloured.png');
-  /* background-color:var(--FirstC) */
-  }
-  
+grid-area:p1;
+background-image: url('/assets/Images/Coloured/Running\ coloured.png');
+/* background-color:var(--FirstC) */
+}
+
 .Pic2{
-  grid-area:p2;
-  background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
-  /* background-color: var(--SecondC) */
+grid-area:p2;
+background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
+/* background-color: var(--SecondC) */
 }
 
 .Pic3{
-  grid-area:p3;
-  background-image: url('/assets/Images/Pointing.png');
-  background-color: var(--ThirdC);
+grid-area:p3;
+background-image: url('/assets/Images/Pointing.png');
+background-color: var(--ThirdC);
 }
 
 .Pic4{
-  grid-area:p4;
-  background-image: url('/assets/Images/Coloured/LED\ coloured.png');
-  /* background-color: var(--FirstC); */
+grid-area:p4;
+background-image: url('/assets/Images/Coloured/LED\ coloured.png');
+/* background-color: var(--FirstC); */
 }
 
 .Pic5{
-  grid-area:p5;
-  background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
-  /* background-color: var(--ThirdC); */
+grid-area:p5;
+background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
+/* background-color: var(--ThirdC); */
 }
 
 .Pic6{
-  grid-area:p6;
-  background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
-  /* background-color: var(--SecondC); */
+grid-area:p6;
+background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
+/* background-color: var(--SecondC); */
 }
 
 .Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2{
-  background: var(--FirstC);
+background: var(--FirstC);
 }
 
 .Pic2 h1, .Pic2 h2, .Pic6 h1, .Pic6 h2{
-  background: var(--SecondC);
+background: var(--SecondC);
 }
 
 .Pic3 h1, .Pic3 h2, .Pic5 h1, .Pic5 h2{
-  background: var(--ThirdC);
+background: var(--ThirdC);
 }
 
 #contact{
@@ -188,7 +207,7 @@ background-color: #00878a;
 }
 
 footer{
-  background-color: var(--dark)
+background-color: var(--dark)
 }
 
 h1{
@@ -197,8 +216,8 @@ background-color:var(--Hide);
 }
 
 h2, p {
-  font-size:medium;
-  background-color:var(--Hide);
+font-size:medium;
+background-color:var(--Hide);
 }
 
 
@@ -207,13 +226,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+margin: 0;
 }
 
 p {
-  margin: 0;
+margin: 0;
 }
 
 .bold {
-  font-weight:bold;
+font-weight:bold;
 }
