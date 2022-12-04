@@ -4,8 +4,11 @@
   --SecondC: #f3a51a;
   --ThirdC: #B40C52;
   --Highlight: #00878a;
+  --Hide: rgba(255, 255, 255, 0);
   --borders: 3px solid #192d50;
   --br: 10px;
+  --shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  --lift: 10px 10px 5px #aaaaaa;
 }
 
 *{
@@ -13,44 +16,45 @@
 }
 
 header{  
-display:flex;
-/* background-color: var(--Highlight); */
-background-image: url('/assets/Images/Header\ possibility.png');
-background-repeat: no-repeat; 
-background-position: center; 
-background-size: cover;
-overflow: hidden;
-height:190px;
-justify-content: space-between;
-align-items: center;
-padding: 2px;
-border: var(--borders);
-border-radius: var(--br);
+  display:flex;
+  /* background-color: var(--Highlight); */
+  background-image: url('/assets/Images/Header\ possibility.png');
+  /* background-repeat: no-repeat;  */
+  /* background-position: center;  */
+  background-size: cover;
+  /* overflow: hidden; */
+  height:190px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border-top: var(--borders);
+  border-bottom: var(--borders);
+  /* border-radius: var(--br); */
 }
 
 header h1{
-  background-color: #00888a00;
+  background-color: var(--Hide);
 }
 
 .logo{
-  background-color: var(--Highlight);
-  index:2;
+  position:fixed;
+  background: var(--Hide);
+  height:250px;
+  width:200px;
 }
 
 .logo img{
-  
-  position:relative;
-  padding: 50px;
-  margin: 50px;
-  top: 0px;
-  left: 0px;
-  height: 50%;
+  justify-content:flex-start;
+  align-items: center;
+  padding:20px;
+  margin: 4px;
+  height: 100%;
   z-index: 2;
-  background-color: var(--Highlight);
+  background-color: var(--Hide);
 }
 
 nav{
-  background-color: #00888a00;
+  background-color: var(--Hide);
   border-radius: var(--br);
 }
 
@@ -63,33 +67,28 @@ nav button{
   width: 300px;
   padding:0 auto;
   Border:var(--borders);
-  border-radius: var(--br)
+  border-radius: var(--br);
 }
 
 .Link1, .Link2, .Link3{
-font-size:large;
-border-radius: var(--br);
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-
-.Link1{
+  font-size:large;
+  border-radius: var(--br);
+  box-shadow: var(--shadow);
   background-position: center;
   background-size: cover;
+}
+
+.Link1{
   background-image: url('/assets/Images/button\ top_.png');
   background-color: var(--FirstC);
 }
 
 .Link2{
-  background-position: center;
-  background-size:cover;
   background-image: url('/assets/Images/button\ middle.png');
   background-color: var(--SecondC);
 }
 
 .Link3{
-  background-position: center;
-  background-size: cover;
   background-image: url('/assets/Images/button\ bottom.png');
   background-color: var(--ThirdC);
 }
@@ -102,8 +101,16 @@ body {
 }
 
 .page-section{
-  margin:10px;
+  margin:80px;
   color: red;
+}
+
+#about{
+    align-items: center;
+}
+
+#about p{
+  align-items:right;
 }
 
 #work{
@@ -122,7 +129,7 @@ body {
   padding: 2px;
   border: var(--borders);
   border-radius: 10px;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: var(--lift);
   background-position: center;
   background-size: cover;
   /* height:100%; */
@@ -137,69 +144,70 @@ body {
   background-image: url('/assets/Images/Coloured/Running\ coloured.png');
   /* background-color:var(--FirstC) */
   }
-  .Pic2{
-    grid-area:p2;
-    background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
-    /* background-color: var(--SecondC) */
-  }
-  .Pic3{
-    grid-area:p3;
-    background-image: url('/assets/Images/Pointing.png');
-    background-color: var(--ThirdC);
-  }
-  .Pic4{
-    grid-area:p4;
-    background-image: url('/assets/Images/Coloured/LED\ coloured.png');
-    background-color: var(--FirstC);
-  }
-  .Pic5{
-    grid-area:p5;
-    background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
-    /* background-color: var(--ThirdC); */
-  }
-
-  .Pic6{
-    grid-area:p6;
-    background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
-    /* background-color: var(--SecondC); */
-  }
-
-  .Pic1 h1, .Pic1 h2{
-    background: var(--FirstC);
-  }
-
-  .Pic2 h1, .Pic2 h2{
-    background: var(--SecondC);
-  }
-
-  .Pic3 h1, .Pic3 h2{
-    background: var(--ThirdC);
-  }
-
-  .Pic4 h1, .Pic4 h2{
-    background: var(--FirstC);
-  }
-
-
-.Pic5 h1, .Pic5 h2{
-  background: var(--ThirdC);
+  
+.Pic2{
+  grid-area:p2;
+  background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
+  /* background-color: var(--SecondC) */
 }
 
-.Pic6 h1, .Pic6 h2{
+.Pic3{
+  grid-area:p3;
+  background-image: url('/assets/Images/Pointing.png');
+  background-color: var(--ThirdC);
+}
+
+.Pic4{
+  grid-area:p4;
+  background-image: url('/assets/Images/Coloured/LED\ coloured.png');
+  /* background-color: var(--FirstC); */
+}
+
+.Pic5{
+  grid-area:p5;
+  background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
+  /* background-color: var(--ThirdC); */
+}
+
+.Pic6{
+  grid-area:p6;
+  background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
+  /* background-color: var(--SecondC); */
+}
+
+.Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2{
+  background: var(--FirstC);
+}
+
+.Pic2 h1, .Pic2 h2, .Pic6 h1, .Pic6 h2{
   background: var(--SecondC);
 }
 
-  #contact{
-    color: orange;
-  }
+.Pic3 h1, .Pic3 h2, .Pic5 h1, .Pic5 h2{
+  background: var(--ThirdC);
+}
 
+#contact{
+color: orange;
+background-color: #00878a;
+}
+
+footer{
+  background-color: #00878a;
+}
 
 h1{
-font-size:x-large
+font-size:x-large;
+background-color:var(--Hide);
 }
-h2{
+
+h2, p {
   font-size:medium;
+  background-color:var(--Hide);
 }
+
+
+
 h3,
 h4,
 h5,
@@ -213,5 +221,4 @@ p {
 
 .bold {
   font-weight:bold;
-
 }
