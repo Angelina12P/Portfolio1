@@ -32,7 +32,7 @@
 .gridtry {
   display: inline-grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 50px 200px 1fr 100px; 
+  grid-template-rows: 40px 200px 1fr 100px; 
   gap: 10px 10px; 
   grid-template-areas: 
     "hn hn hn "
@@ -59,7 +59,7 @@ nav {
 nav button {
   overflow: hidden;
   margin: 10px;
-  height: 40px;
+  height: 30px;
   width: 300px;
   padding:0 auto;
   Border:var(--borders); 
@@ -101,24 +101,24 @@ a:hover {
 
 .Link1 {
   grid-area:l1;
-  background-image: url('assets/images/button\ top_.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20top_.png?raw=true");
   /* background-color: var(--FirstC); */
 }
 .Link2 {
   grid-area:l2;
-  background-image: url('assets/images/button\ middle.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20middle.png?raw=true");
   /* background-color: var(--SecondC); */
 }
 .Link3 {
   grid-area:l3;
-  background-image: url('assets/images/button\ bottom.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20bottom.png?raw=true");
   /* background-color: var(--ThirdC); */
 }
 
 
 #hero-banner { 
   grid-area: ba; 
-  background-image: url('assets/images/header\ possibility.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Header%20possibility.png?raw=true");
   background-size: cover;
   /* overflow: hidden; */
   height:190px;
@@ -193,25 +193,25 @@ object-fit:fill;
 
 .Pic1 {
 grid-area:p1;
-background-image: url('assets/Images/Coloured/Running\ coloured.png');
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Running%20coloured.png?raw=true");
 /* background-color:var(--FirstC) */
 }
 .Pic1:hover{
-  background-image: url('assets/images/normal/running.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Running.png?raw=true");
 }
 
 .Pic2 {
 grid-area:p2;
-background-image: url('assets/images/coloured/Surf\ coloured.png');
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Surf%20coloured.png?raw=true");
 /* background-color: var(--SecondC) */
 }
 .Pic2:hover{
-  background-image: url('assets/images/normal/surf.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Surf.png?raw=true");
 }
 
 .Pic3 {
 grid-area:p3;
-image: url('assets/images/pointing.png');
+image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pointing.png?raw=true");
 background-color: var(--ThirdC);
 }
 .Pic3 img {
@@ -223,29 +223,29 @@ background-color: var(--ThirdC);
 
 .Pic4 {
 grid-area:p4;
-background-image: url('assets/images/coloured/led\ coloured.png');
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/LED%20coloured.png?raw=true");
 background-color: var(--FirstC);
 }
 .Pic4:hover{
-  background-image: url('assets/images/normal/led.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/LED.png?raw=true");
 }
 
 .Pic5 {
 grid-area:p5;
-background-image: url('assets/images/coloured/puzzle\ coloured.png');
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Puzzle%20coloured.png?raw=true");
 /* background-color: var(--ThirdC); */
 }
 .Pic5:hover{
-  background-image: url('assets/images/normal/puzzle.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Puzzle.png?raw=true");
 }
 
 .Pic6 {
 grid-area:p6;
-background-image: url('assets/images/coloured/calculator\ coloured.png')
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/calculator%20coloured.png?raw=true")
 /* background-color: var(--SecondC); */
 }
 .Pic6:hover{
-  background-image: url('assets/images/normal/calculator.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/calculator.png?raw=true");
 }
 .Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2 {
 background: var(--FirstC);
