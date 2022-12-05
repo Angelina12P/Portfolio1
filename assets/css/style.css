@@ -101,24 +101,24 @@ a:hover {
 
 .Link1 {
   grid-area:l1;
-  background-image: url('/assets/Images/button\ top_.png');
+  background-image: url('/assets/images/button\ top_.png');
   /* background-color: var(--FirstC); */
 }
 .Link2 {
   grid-area:l2;
-  background-image: url('/assets/Images/button\ middle.png');
+  background-image: url('/assets/images/button\ middle.png');
   /* background-color: var(--SecondC); */
 }
 .Link3 {
   grid-area:l3;
-  background-image: url('/assets/Images/button\ bottom.png');
+  background-image: url('/assets/images/button\ bottom.png');
   /* background-color: var(--ThirdC); */
 }
 
 
 #hero-banner { 
   grid-area: ba; 
-  background-image: url('/assets/Images/Header\ possibility.png');
+  background-image: url('/assets/images/header\ possibility.png');
   background-size: cover;
   /* overflow: hidden; */
   height:190px;
@@ -197,21 +197,21 @@ background-image: url('/assets/Images/Coloured/Running\ coloured.png');
 /* background-color:var(--FirstC) */
 }
 .Pic1:hover{
-  background-image: url('/assets/Images/Normal/Running.png');
+  background-image: url('/assets/images/normal/running.png');
 }
 
 .Pic2 {
 grid-area:p2;
-background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
+background-image: url('/assets/images/coloured/Surf\ coloured.png');
 /* background-color: var(--SecondC) */
 }
 .Pic2:hover{
-  background-image: url('/assets/Images/Normal/Surf.png');
+  background-image: url('/assets/images/normal/surf.png');
 }
 
 .Pic3 {
 grid-area:p3;
-image: url('/assets/Images/Pointing.png');
+image: url('/assets/images/pointing.png');
 background-color: var(--ThirdC);
 }
 .Pic3 img {
@@ -223,29 +223,29 @@ background-color: var(--ThirdC);
 
 .Pic4 {
 grid-area:p4;
-background-image: url('/assets/Images/Coloured/LED\ coloured.png');
+background-image: url('/assets/images/coloured/led\ coloured.png');
 background-color: var(--FirstC);
 }
 .Pic4:hover{
-  background-image: url('/assets/Images/Normal/LED.png');
+  background-image: url('/assets/images/normal/led.png');
 }
 
 .Pic5 {
 grid-area:p5;
-background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
+background-image: url('/assets/images/coloured/puzzle\ coloured.png');
 /* background-color: var(--ThirdC); */
 }
 .Pic5:hover{
-  background-image: url('/assets/Images/Normal/Puzzle.png');
+  background-image: url('/assets/images/normal/puzzle.png');
 }
 
 .Pic6 {
 grid-area:p6;
-background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
+background-image: url('/assets/images/coloured/calculator\ coloured.png')
 /* background-color: var(--SecondC); */
 }
 .Pic6:hover{
-  background-image: url('/assets/Images/Normal/calculator.png');
+  background-image: url('/assets/images/normal/calculator.png');
 }
 .Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2 {
 background: var(--FirstC);
