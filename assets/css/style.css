@@ -20,7 +20,9 @@
   position:fixed;
   background: var(--Hide);
   margin: 20px;
+  top:53px;
   }
+
 .logo img{
   height: 200px;
   width:250px;
@@ -54,45 +56,65 @@ nav {
   justify-content:space-around; 
   align-items: center; 
 }
-
-
 nav button {
   overflow: hidden;
   margin: 10px;
   height: 40px;
   width: 300px;
   padding:0 auto;
-  Border:var(--borders);
- 
-  
+  Border:var(--borders); 
 }
-
 .Link1, .Link2, .Link3 {
-  font-size:large;
   border-radius: var(--br);
   box-shadow: var(--shadow);
   background-position: center;
   background-size: cover;
-
 }
+
+.link1 a, .Link2 a, .Link3 a {
+background-color: var(--Hide);
+font-size: xx-large;
+border-bottom: none;
+align-items: center;
+justify-self: center;
+} 
+
+.Link1 a:hover {
+  color: var(--FirstC);
+}
+.Link2 a:hover {
+  color: var(--SecondC);
+}
+.Link3 a:hover {
+  color:var(--ThirdC);
+}
+
+
+a:hover {
+  border-bottom: 1px solid;
+  background: var(--Highlight);
+}
+
+
+
+
 
 .Link1 {
   grid-area:l1;
   background-image: url('/assets/Images/button\ top_.png');
-  background-color: var(--FirstC);
+  /* background-color: var(--FirstC); */
 }
-
 .Link2 {
   grid-area:l2;
   background-image: url('/assets/Images/button\ middle.png');
-  background-color: var(--SecondC);
+  /* background-color: var(--SecondC); */
 }
-
 .Link3 {
   grid-area:l3;
   background-image: url('/assets/Images/button\ bottom.png');
-  background-color: var(--ThirdC);
+  /* background-color: var(--ThirdC); */
 }
+
 
 #hero-banner { 
   grid-area: ba; 
@@ -104,7 +126,7 @@ nav button {
   border-top: var(--borders);
   border-bottom: var(--borders);
   display:flex;
-  justify-content:center;
+  justify-content:end;
   align-items:center;
 }
 
@@ -132,7 +154,7 @@ body {
 
 .logoarea { 
   grid-area: la;
-  background:black; 
+  background:white; 
 }
 
 .wt { 
@@ -160,11 +182,11 @@ border-radius: 10px;
 box-shadow: var(--lift);
 background-position: center;
 background-size: cover;
-/* height:100%; */
-/* width:100%; */
-/* display: flex; */
-/* align-items:flex-end; */
-/* margin-bottom: 20px;  */
+
+display: flex;
+justify-content: end;
+align-items:flex-end;
+margin-bottom: 20px; 
 object-fit:fill;
 
 }
@@ -174,11 +196,17 @@ grid-area:p1;
 background-image: url('/assets/Images/Coloured/Running\ coloured.png');
 /* background-color:var(--FirstC) */
 }
+.Pic1:hover{
+  background-image: url('/assets/Images/Normal/Running.png');
+}
 
 .Pic2 {
 grid-area:p2;
 background-image: url('/assets/Images/Coloured/Surf\ coloured.png');
 /* background-color: var(--SecondC) */
+}
+.Pic2:hover{
+  background-image: url('/assets/Images/Normal/Surf.png');
 }
 
 .Pic3 {
@@ -186,18 +214,20 @@ grid-area:p3;
 image: url('/assets/Images/Pointing.png');
 background-color: var(--ThirdC);
 }
+.Pic3 img {
+  /* max-width: 200px; */
+  /* object-position: ; */
+  background: var(--Hide);
+  z-index:2;
+}
 
 .Pic4 {
 grid-area:p4;
 background-image: url('/assets/Images/Coloured/LED\ coloured.png');
 background-color: var(--FirstC);
 }
-
-.Pic3 img {
-  max-width: 200px;
-  /* object-position: ; */
-  background: var(--Hide);
-  z-index:2;
+.Pic4:hover{
+  background-image: url('/assets/Images/Normal/LED.png');
 }
 
 .Pic5 {
@@ -205,13 +235,18 @@ grid-area:p5;
 background-image: url('/assets/Images/Coloured/Puzzle\ coloured.png');
 /* background-color: var(--ThirdC); */
 }
+.Pic5:hover{
+  background-image: url('/assets/Images/Normal/Puzzle.png');
+}
 
 .Pic6 {
 grid-area:p6;
 background-image: url('/assets/Images/Coloured/calculator\ coloured.png')
 /* background-color: var(--SecondC); */
 }
-
+.Pic6:hover{
+  background-image: url('/assets/Images/Normal/calculator.png');
+}
 .Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2 {
 background: var(--FirstC);
 }
@@ -230,8 +265,41 @@ background-color: #00878a;
 }
 
 footer {
-background-color: var(--dark)
+background-color: var(--dark);
 }
+
+.ContactLinks{
+  background-color: var(--Hide);
+}
+
+.ContactLinks > li {
+  display: inline;
+
+}
+li {
+  font-weight: 300;
+  background-color: var(--Hide);
+  position: relative;
+  justify-content: center;
+
+}
+.ContactLinks a {
+  background-color: var(--Hide);
+  border: var(--borders);
+  border-radius: var(--br);
+  /* border-radius: 6px; */
+  border-bottom: none;
+  color: var(--dark);
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 3px;
+  padding: 7px 12px;
+
+}
+
+
+
+
 
 h1 {
 font-size:x-large;
