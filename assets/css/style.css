@@ -1,7 +1,15 @@
 * {
   border: 1px solid red;
   background-color: azure;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Inknut Antiqua', serif;
+  /* font-family: 'Eczar', serif; */
+  /* font-family: 'Cormorant', serif; */
+
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Eczar&family=Inknut+Antiqua:wght@300&family=Playfair+Display&display=swap');
+
 /* flex box, media queries, CSS variables */
 :root {
   --FirstC: #055a39;
@@ -16,21 +24,32 @@
   --dark: #192d50;
 }
 
+
+/* ideally want to find a way to get the logo to stick at 'about me' section when scrolling */
 .logo {
   position:fixed;
   background: var(--Hide);
   margin: 20px;
-  top:53px;
+  top:43px;
+  position: fixed;
+  /* width: 600px;
+  height: 200px;
+  left: 50%;
+  top: 0%;
+  margin-left: -300px; half the width */
+  /* transform:translateX(50%); */
   }
 
 .logo img{
   height: 200px;
   width:250px;
   background: var(--Hide);
+  position: sticky;
+  top: 200px;
 }
 
 .gridtry {
-  display: inline-grid; 
+  display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 40px 200px 1fr 100px; 
   gap: 10px 10px; 
@@ -70,15 +89,13 @@ nav button {
   background-position: center;
   background-size: cover;
 }
-
-.link1 a, .Link2 a, .Link3 a {
+.Link1 a, .Link2 a, .Link3 a {
 background-color: var(--Hide);
 font-size: xx-large;
 border-bottom: none;
 align-items: center;
 justify-self: center;
 } 
-
 .Link1 a:hover {
   color: var(--FirstC);
 }
@@ -88,17 +105,10 @@ justify-self: center;
 .Link3 a:hover {
   color:var(--ThirdC);
 }
-
-
 a:hover {
   border-bottom: 1px solid;
   background: var(--Highlight);
 }
-
-
-
-
-
 .Link1 {
   grid-area:l1;
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20top_.png?raw=true");
@@ -120,18 +130,16 @@ a:hover {
   grid-area: ba; 
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Header%20possibility.png?raw=true");
   background-size: cover;
-  /* overflow: hidden; */
   height:190px;
-  /* padding: 2px; */
+  padding: 2px;
   border-top: var(--borders);
   border-bottom: var(--borders);
-  display:flex;
-  justify-content:end;
-  align-items:center;
 }
 
 #hero-banner h1 {
-  font-size: xx-large;
+  font-size: 50pt;
+  display:flex;
+  justify-content: center;
 }
 
 body {
@@ -208,15 +216,15 @@ background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/asset
 .Pic2:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Surf.png?raw=true");
 }
-
+/* why isn't this one working? */
 .Pic3 {
 grid-area:p3;
 image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pointing.png?raw=true");
 background-color: var(--ThirdC);
 }
 .Pic3 img {
-  /* max-width: 200px; */
-  /* object-position: ; */
+  max-width: 200px;
+  object-position: center;
   background: var(--Hide);
   z-index:2;
 }
@@ -250,13 +258,22 @@ background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/asset
 .Pic1 h1, .Pic1 h2, .Pic4 h1, .Pic4 h2 {
 background: var(--FirstC);
 }
+.Pic1 h1:hover, .Pic1 h2:hover, .Pic4 h1:hover, .Pic4 h2:hover{
+background: #055a399a;
+}
 
 .Pic2 h1, .Pic2 h2, .Pic6 h1, .Pic6 h2 {
 background: var(--SecondC);
 }
+.Pic2 h1:hover, .Pic2 h2:hover, .Pic6 h1:hover, .Pic6 h2:hover {
+background: #f3a31aae;
+}
 
 .Pic3 h1, .Pic3 h2, .Pic5 h1, .Pic5 h2 {
 background: var(--ThirdC);
+}
+.Pic3 h1:hover, .Pic3 h2:hover, .Pic5 h1:hover, .Pic5 h2:hover {
+background: #b40c52af;
 }
 
 #contact {
