@@ -17,11 +17,11 @@
   --ThirdC: #B40C52;
   --Highlight: #00878a;
   --Hide: rgba(255, 255, 255, 0);
-  --borders: 3px solid #192d50;
+  --borders: 3px solid #080E44;
   --br: 10px;
   --shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   --lift: 10px 10px 5px #aaaaaa;
-  --dark: #192d50;
+  --dark: #080D46
 }
 
 
@@ -93,8 +93,8 @@ nav button {
 background-color: var(--Hide);
 font-size: xx-large;
 border-bottom: none;
-align-items: center;
-justify-self: center;
+position:relative;
+top:-5px;
 } 
 .Link1 a:hover {
   color: var(--FirstC);
