@@ -73,6 +73,7 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+/* Need to get these smaller */
 nav button {
   margin: 2px;
   height: 50px;
@@ -276,45 +277,10 @@ background: var(--ThirdC);
 background: #b40c52af;
 }
 
-
-
-
-
-
-
-
-
-
-
 .footer {
-  /* background-color: var(--dark); */
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 50px 50px 1fr 100px; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
-    "blank pn pn icons icons em em ."
-    "blank cm cm cm cm cm cm blank"
-    "blank gh tw lk yt bl sp blank"; 
+  background-color: var(--dark);
 }
-.blank{
-  grid-area:blank;
-  background-color:azure;
 
-}
-#contact h2 {
-   grid-area:ch2; 
-}
-.pn{
-  grid-area:pn;
-}
-.em {
-  grid-area:em; 
-}
-.icons {
-  grid-area:icons; 
-}
 #contact {
 color: orange;
 background-color: #00878a;
@@ -327,16 +293,18 @@ grid-area:cm;
 
 .ContactLinks > li {
   display: inline;
-  position:relative;
+  /* position:relative; */
 }
-.li {
+
+#SM{
   font-weight: 300;
   background-color: var(--Hide);
-  /* position: relative; */
-  /* justify-content: center; */
-
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.ContactLinks a {
+
+.SM a {
   background-color: var(--Hide);
   border: var(--borders);
   border-radius: var(--br);
@@ -377,7 +345,7 @@ grid-area:bl;
 }
 .Spotify{
   grid-area:sp;
-}
+} */
 
 h1 {
 font-size:35pt;
