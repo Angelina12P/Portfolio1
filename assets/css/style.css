@@ -41,6 +41,10 @@
   top: 200px;
 }
 
+.logo a{
+  background-color: var(--Hide);
+}
+
 .gridtry {
   display: grid; 
   grid-template-columns: 0.7fr 1.3fr 1fr; 
@@ -223,9 +227,10 @@ background-color: var(--ThirdC);
  }
 .Pic4 {
 grid-area:p4;
-background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/LED%20coloured.png?raw=true");
-background-color: var(--FirstC);
+background-image:url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/LED%20coloured.png?raw=true");
+background-color:var(--FirstC);
 }
+
 .Pic4:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/LED.png?raw=true");
 }
@@ -238,7 +243,7 @@ background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/asset
 }
 .Pic6 {
 grid-area:p6;
-background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/calculator%20coloured.png?raw=true")
+background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/calculator%20coloured.png?raw=true");
 }
 .Pic6:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/calculator.png?raw=true");
