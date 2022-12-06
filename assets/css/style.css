@@ -109,15 +109,15 @@ a:hover {
 }
 .Link1 {
   grid-area:l1;
-  background-image: url('/assets/Images/Green\ Button.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Green%20Button.png?raw=true");
 }
 .Link2 {
   grid-area:l2;
-  background-image: url('/assets/Images/Yellow\ Button.png');
-}
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Yellow%20Button.png?raw=true");
+  }
 .Link3 {
   grid-area:l3;
-  background-image: url('/assets/Images/Pink\ Button.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pink%20Button.png?raw=true");
 }
 
 
