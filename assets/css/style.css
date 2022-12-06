@@ -29,7 +29,7 @@
   background: var(--Hide);
   margin-top: 20px;
   margin-left:10px;
-  top:28px;
+  top: 25px;
   position: fixed;
   }
 
@@ -75,8 +75,6 @@ nav button {
   width: 200px;
   padding:20;
   Border:var(--borders); 
-  display:flex;
-  justify-content: space-around;
   }
 
 .Link1, .Link2, .Link3 {
