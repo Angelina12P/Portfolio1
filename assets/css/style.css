@@ -189,7 +189,6 @@ align-content: end;
 .Pic1 {
 grid-area:p1;
 background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Running%20coloured.png?raw=true");
-/* background-color:var(--FirstC) */
 }
 .Pic1:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Running.png?raw=true");
@@ -198,24 +197,23 @@ background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/asset
 .Pic2 {
 grid-area:p2;
 background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Surf%20coloured.png?raw=true");
-/* background-color: var(--SecondC) */
 }
 .Pic2:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Surf.png?raw=true");
 }
-/* why isn't this one working? */
+
+/* Fix this!! */
 .Pic3 {
 grid-area:p3;
-/* image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pointing.png?raw=true"); */
 background-color: var(--ThirdC);
 }
+
 .Pic3 img {
   max-width: 200px;
   object-position: center;
   background: var(--Hide);
   z-index:2;
 }
-
 .Pic4 {
 grid-area:p4;
 background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/LED%20coloured.png?raw=true");
@@ -224,20 +222,16 @@ background-color: var(--FirstC);
 .Pic4:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/LED.png?raw=true");
 }
-
 .Pic5 {
 grid-area:p5;
 background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/Puzzle%20coloured.png?raw=true");
-/* background-color: var(--ThirdC); */
 }
 .Pic5:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/Puzzle.png?raw=true");
 }
-
 .Pic6 {
 grid-area:p6;
 background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Coloured/calculator%20coloured.png?raw=true")
-/* background-color: var(--SecondC); */
 }
 .Pic6:hover{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Normal/calculator.png?raw=true");
@@ -248,14 +242,12 @@ background: var(--FirstC);
 .Pic1 h1:hover, .Pic1 h2:hover, .Pic4 h1:hover, .Pic4 h2:hover{
 background: #055a399a;
 }
-
 .Pic2 h1, .Pic2 h2, .Pic6 h1, .Pic6 h2 {
 background: var(--SecondC);
 }
 .Pic2 h1:hover, .Pic2 h2:hover, .Pic6 h1:hover, .Pic6 h2:hover {
 background: #f3a31aae;
 }
-
 .Pic3 h1, .Pic3 h2, .Pic5 h1, .Pic5 h2 {
 background: var(--ThirdC);
 }
@@ -270,7 +262,6 @@ footer {
   margin:10px;
   padding:20px;
   }
-
   footer a {
 background-color: var(--Hide);
 color:var(--SecondC)
@@ -282,7 +273,6 @@ background-color: var(--Hide);
 margin:0 auto;
 width:400px;
 display:block;
-
 }
 
 #SM{
@@ -304,9 +294,6 @@ display:block;
   font-size: 15px;
   margin-bottom: 3px;
   padding: 7px 12px;
-}
-
-.SM p {
 }
 
 .Github a, .Youtube a{
@@ -341,6 +328,39 @@ margin-left: 20px;
 
 .bold {
 font-weight:bold;
+}
+
+
+
+@media screen and (max-width:600px){
+  main{
+    max-width:fit-content;
+  }
+  .title{
+    display:none;
+  }
+  #work {
+    
+    display:grid;
+    gap: 1em;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas: 
+"p1"
+"p2"
+"p4"
+"p5"
+"p6";
+}
+.Pic3{
+  display:none;
+}
+.nav, .header,  {
+  display:none;
+}
+nav button {
+  display:none;
+}
 }
 
 /* flex box, media queries, CSS variables */
