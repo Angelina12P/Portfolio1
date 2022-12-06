@@ -1,16 +1,13 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: azure;
   /* font-family: 'Playfair Display', serif; */
   font-family: 'Inknut Antiqua', serif;
   /* font-family: 'Eczar', serif; */
   /* font-family: 'Cormorant', serif; */
-
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Eczar&family=Inknut+Antiqua:wght@300&family=Playfair+Display&display=swap');
 
-/* flex box, media queries, CSS variables */
 :root {
   --FirstC: #055a39;
   --SecondC: #f3a51a;
@@ -29,15 +26,10 @@
 .logo {
   position:fixed;
   background: var(--Hide);
-  margin: 20px;
+  margin-top: 20px;
+  margin-left:10px;
   top:43px;
   position: fixed;
-  /* width: 600px;
-  height: 200px;
-  left: 50%;
-  top: 0%;
-  margin-left: -300px; half the width */
-  /* transform:translateX(50%); */
   }
 
 .logo img{
@@ -50,20 +42,18 @@
 
 .gridtry {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 0.7fr 1.3fr 1fr; 
   grid-template-rows: 45px 200px 1fr 100px; 
-  gap: 10px 10px; 
+  gap: 5px 10px; 
   grid-template-areas: 
     "hn hn hn "
     "ba ba ba"
     "la ab ab"
     "wt wt wt"; 
 }
-
 header { 
   grid-area: hn; 
  }
-
 nav {
   background-color: var(--dark);
   display:grid;
@@ -82,8 +72,7 @@ nav button {
   Border:var(--borders); 
   display:flex;
   justify-content: space-around;
-  
-}
+  }
 .Link1, .Link2, .Link3 {
   border-radius: var(--br);
   box-shadow: var(--shadow);
@@ -97,8 +86,8 @@ position:relative;
 top:-22px;
 color: black;
 width:300px;
-
 } 
+/* text shadow?? */
 .Link1 a:hover {
   color: #0b9661;
   text-shadow:var(--shadow);
@@ -136,14 +125,9 @@ a:hover {
   border-top: var(--borders);
   border-bottom: var(--borders);
 }
-
-
-
 .title {
   background:var(--Hide);
   font-size: 50pt;
-  /* display:flex;   */
-  /* justify-content: center; */
   position:relative;
   left:30%;
   top: 20%;
@@ -165,7 +149,6 @@ body {
   align-items:center;
 }
 
-
 .logoarea { 
   grid-area: la;
   background:white; 
@@ -173,6 +156,9 @@ body {
 
 .wt { 
 grid-area: wt; 
+display:flex;
+justify-content: center;
+align-items:center
 }
 
 
@@ -277,23 +263,26 @@ background: var(--ThirdC);
 background: #b40c52af;
 }
 
-.footer {
+footer {
   background-color: var(--dark);
-}
+  border: var(--borders);
+  border-radius: var(--br);
+  margin:10px;
+  padding:20px;
+  }
+
+  footer a {
+background-color: var(--Hide);
+color:var(--SecondC)
+  }
 
 #contact {
-color: orange;
-background-color: #00878a;
-grid-area:cm;
-}
+color: var(--SecondC);
+background-color: var(--Hide);
+margin:0 auto;
+width:400px;
+display:block;
 
-.ContactLinks{
-  background-color: var(--Hide);
-}
-
-.ContactLinks > li {
-  display: inline;
-  /* position:relative; */
 }
 
 #SM{
@@ -301,7 +290,8 @@ grid-area:cm;
   background-color: var(--Hide);
   display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 5px;
 }
 
 .SM a {
@@ -316,6 +306,9 @@ grid-area:cm;
   padding: 7px 12px;
 }
 
+.SM p {
+}
+
 .Github a, .Youtube a{
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/yellow%20code.png?raw=true");
 }
@@ -328,46 +321,26 @@ grid-area:cm;
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/green%20code.png?raw=true");
 }
 
-.Github{
-  grid-area:gh;
-}
-.Twitter{
-  grid-area:tw;
-}
-.Linkedin{
-  grid-area:lk;
-}
-.Youtube{
-grid-area:yt;
-}
-.Blog{
-grid-area:bl;
-}
-.Spotify{
-  grid-area:sp;
-} */
+.Github{grid-area:gh;}.Twitter{grid-area:tw;}.Linkedin{grid-area:lk;}.Youtube{grid-area:yt;}.Blog{grid-area:bl;}.Spotify{grid-area:sp;}
 
 h1 {
 font-size:35pt;
 background-color:var(--Hide);
 display:grid;
 justify-content: center;
+align-items: center;
 color: var(--dark);
 }
 
 h2, p {
 font-size:medium;
 background-color:var(--Hide);
-}
-
-h6 {
-margin: 0;
-}
-
-p {
-margin: 0;
+padding: 20px;
+margin-left: 20px;
 }
 
 .bold {
 font-weight:bold;
 }
+
+/* flex box, media queries, CSS variables */
