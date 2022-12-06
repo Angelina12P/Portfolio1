@@ -109,21 +109,21 @@ a:hover {
 }
 .Link1 {
   grid-area:l1;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20top_.png?raw=true");
+  background-image: url('/assets/Images/Green\ Button.png');
 }
 .Link2 {
   grid-area:l2;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20middle.png?raw=true");
+  background-image: url('/assets/Images/Yellow\ Button.png');
 }
 .Link3 {
   grid-area:l3;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/button%20bottom.png?raw=true");
+  background-image: url('/assets/Images/Pink\ Button.png');
 }
 
 
 #hero-banner { 
   grid-area: ba; 
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Header%20possibility.png?raw=true");
+  background-image: url('/assets/Images/Header.png');
   background-size: cover;
   height:190px;
   padding: 2px;
