@@ -43,7 +43,7 @@
 .gridtry {
   display: grid; 
   grid-template-columns: 0.7fr 1.3fr 1fr; 
-  grid-template-rows: 45px 200px 1fr 100px; 
+  grid-template-rows: 30px 200px 1fr 100px; 
   gap: 5px 10px; 
   grid-template-areas: 
     "hn hn hn "
@@ -63,11 +63,11 @@ nav {
   display: flex;
   justify-content: space-around;
 }
-/* Need to get these smaller */
+/* Need to get these smaller. Also a bit hectic change them. */
 nav button {
   margin: 2px;
-  height: 50px;
-  width: 300px;
+  height: 35px;
+  width: 200px;
   padding:0 auto;
   Border:var(--borders); 
   display:flex;
@@ -83,7 +83,7 @@ nav button {
 background-color: var(--Hide);
 font-size: xx-large;
 position:relative;
-top:-22px;
+top:-28px;
 color: black;
 width:300px;
 } 
@@ -104,15 +104,18 @@ a:hover {
 }
 .Link1 {
   grid-area:l1;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Green%20Button.png?raw=true");
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Green%20Button.png?raw=true"); */
+  background-color: var(--FirstC);
 }
 .Link2 {
   grid-area:l2;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Yellow%20Button.png?raw=true");
-  }
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Yellow%20Button.png?raw=true"); */
+  background-color: var(--SecondC);  
+}
 .Link3 {
   grid-area:l3;
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pink%20Button.png?raw=true");
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pink%20Button.png?raw=true"); */
+  background-color: var(--ThirdC);
 }
 
 
@@ -299,15 +302,18 @@ display:block;
 }
 
 .Github a, .Youtube a{
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/yellow%20code.png?raw=true");
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/yellow%20code.png?raw=true"); */
+background-color: var(--SecondC);
 }
 
 .Twitter a, .Blog a{
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/pink%20code.png?raw=true");
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/pink%20code.png?raw=true"); */
+background-color: var(--ThirdC);
 }
 
 .Linkedin a, .Spotify a {
-  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/green%20code.png?raw=true");
+  /* background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/green%20code.png?raw=true"); */
+background-color: var(--FirstC);
 }
 
 .Github, .Twitter, .Linkedin, .Youtube, .Blog, .Spotify {
