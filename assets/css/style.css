@@ -261,11 +261,12 @@ footer {
   border-radius: var(--br);
   margin:10px;
   padding:20px;
-  }
-  footer a {
+  box-shadow: var(--shadow);
+}
+footer a {
 background-color: var(--Hide);
 color:var(--SecondC)
-  }
+}
 
 #contact {
 color: var(--SecondC);
@@ -278,6 +279,7 @@ display:block;
 #SM{
   font-weight: 300;
   background-color: var(--Hide);
+
   display:flex;
   align-items: center;
   justify-content: center;
@@ -288,12 +290,12 @@ display:block;
   background-color: var(--Hide);
   border: var(--borders);
   border-radius: var(--br);
-  /* border-radius: 6px; */
   color: var(--dark);
   display: inline-block;
   font-size: 15px;
   margin-bottom: 3px;
   padding: 7px 12px;
+  box-shadow: var(--shadow); 
 }
 
 .Github a, .Youtube a{
@@ -308,6 +310,10 @@ display:block;
   background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Overlay/green%20code.png?raw=true");
 }
 
+.Github, .Twitter, .Linkedin, .Youtube, .Blog, .Spotify {
+  /* box-shadow: var(--shadow); */
+  padding: 5px;
+}
 .Github{grid-area:gh;}.Twitter{grid-area:tw;}.Linkedin{grid-area:lk;}.Youtube{grid-area:yt;}.Blog{grid-area:bl;}.Spotify{grid-area:sp;}
 
 h1 {
@@ -361,6 +367,6 @@ font-weight:bold;
 nav button {
   display:none;
 }
-}
+
 
 /* flex box, media queries, CSS variables */
