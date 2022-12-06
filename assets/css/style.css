@@ -88,14 +88,14 @@ color: black;
 width:300px;
 } 
 /* text shadow?? */
-.Link1 a:hover {
+.Link1 a:hover, .Linkedin a:hover, .Spotify a:hover{
   color: #0b9661;
   text-shadow:var(--shadow);
 }
-.Link2 a:hover {
+.Link2 a:hover, .Github a:hover, .Youtube a:hover {
   color: var(--SecondC);
 }
-.Link3 a:hover {
+.Link3 a:hover, .Twitter a:hover, .Blog a:hover {
   color:var(--ThirdC);
 }
 a:hover {
