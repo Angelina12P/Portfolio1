@@ -21,7 +21,7 @@
   --br: 10px;
   --shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   --lift: 10px 10px 5px #aaaaaa;
-  --dark: #080D46
+  --dark: #080D46;
 }
 
 
@@ -51,7 +51,7 @@
 .gridtry {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 40px 200px 1fr 100px; 
+  grid-template-rows: 45px 200px 1fr 100px; 
   gap: 10px 10px; 
   grid-template-areas: 
     "hn hn hn "
@@ -70,13 +70,18 @@ nav {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:  
   "l1 l2 l3"; 
+  display: flex;
+  justify-content: space-around;
 }
 nav button {
-  margin: 10px;
-  height: 30px;
+  margin: 2px;
+  height: 50px;
   width: 300px;
   padding:0 auto;
   Border:var(--borders); 
+  display:flex;
+  justify-content: space-around;
+  
 }
 .Link1, .Link2, .Link3 {
   border-radius: var(--br);
@@ -88,7 +93,7 @@ nav button {
 background-color: var(--Hide);
 font-size: xx-large;
 position:relative;
-top:-32px;
+top:-22px;
 color: black;
 width:300px;
 
@@ -123,7 +128,7 @@ a:hover {
 
 #hero-banner { 
   grid-area: ba; 
-  background-image: url('/assets/Images/Header.png');
+  background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Header.png?raw=true");
   background-size: cover;
   height:190px;
   padding: 2px;
@@ -131,10 +136,16 @@ a:hover {
   border-bottom: var(--borders);
 }
 
-#hero-banner h1 {
+
+
+.title {
+  background:var(--Hide);
   font-size: 50pt;
-  display:flex;
-  justify-content: center;
+  /* display:flex;   */
+  /* justify-content: center; */
+  position:relative;
+  left:30%;
+  top: 20%;
 }
 
 body {
@@ -161,9 +172,8 @@ body {
 
 .wt { 
 grid-area: wt; 
-position: relative;
-left:45%;
 }
+
 
 #work {
 margin:10px;;
@@ -183,6 +193,10 @@ border: var(--borders);
 border-radius: 10px;
 box-shadow: var(--lift);
 background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display:grid;
+align-content: end;
 }
 
 .Pic1 {
@@ -261,6 +275,15 @@ background: var(--ThirdC);
 .Pic3 h1:hover, .Pic3 h2:hover, .Pic5 h1:hover, .Pic5 h2:hover {
 background: #b40c52af;
 }
+
+
+
+
+
+
+
+
+
 
 
 .footer {
@@ -359,6 +382,9 @@ grid-area:bl;
 h1 {
 font-size:35pt;
 background-color:var(--Hide);
+display:grid;
+justify-content: center;
+color: var(--dark);
 }
 
 h2, p {
