@@ -23,12 +23,13 @@
 
 
 /* ideally want to find a way to get the logo to stick at 'about me' section when scrolling */
+/* Remember the fix the scroll thing it looks trash */
 .logo {
   position:fixed;
   background: var(--Hide);
   margin-top: 20px;
   margin-left:10px;
-  top:43px;
+  top:28px;
   position: fixed;
   }
 
@@ -350,7 +351,7 @@ font-weight:bold;
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
   main{
     max-width:fit-content;
   }
@@ -373,12 +374,12 @@ font-weight:bold;
 .Pic3{
   display:none;
 }
-.nav, .header,  {
+.nav, .header{
   display:none;
 }
 nav button {
   display:none;
 }
-
+}
 
 /* flex box, media queries, CSS variables */
