@@ -205,7 +205,7 @@ background-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/asset
 /* why isn't this one working? */
 .Pic3 {
 grid-area:p3;
-image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pointing.png?raw=true");
+/* image: url("https://github.com/Angelina12P/Portfolio1/blob/main/assets/Images/Pointing.png?raw=true"); */
 background-color: var(--ThirdC);
 }
 .Pic3 img {
@@ -266,7 +266,7 @@ background: #b40c52af;
 .footer {
   /* background-color: var(--dark); */
   display: grid; 
-  grid-template-columns: 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 50px 50px 1fr 100px; 
   gap: 0px 0px; 
   grid-template-areas: 
@@ -276,20 +276,21 @@ background: #b40c52af;
     "blank gh tw lk yt bl sp blank"; 
 }
 .blank{
-  grid-area: blank;
+  grid-area:blank;
   background-color:azure;
+
 }
 #contact h2 {
-   grid-area: ch2; 
+   grid-area:ch2; 
 }
 .pn{
-  grid-area: pn;
+  grid-area:pn;
 }
 .em {
-  grid-area: em; 
+  grid-area:em; 
 }
 .icons {
-  grid-area: icons; 
+  grid-area:icons; 
 }
 #contact {
 color: orange;
