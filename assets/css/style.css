@@ -279,6 +279,7 @@ background-color: var(--Hide);
 margin:0 auto;
 width:400px;
 display:block;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.752);
 }
 
 #SM{
@@ -340,7 +341,7 @@ font-size:medium;
 background-color:var(--Hide);
 padding: 20px;
 margin-left: 20px;
-text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.752);
+
 }
 
 .bold {
