@@ -78,6 +78,7 @@ nav button {
   display:flex;
   justify-content: space-around;
   }
+
 .Link1, .Link2, .Link3 {
   border-radius: var(--br);
   box-shadow: var(--shadow);
@@ -220,7 +221,8 @@ background-color: var(--ThirdC);
 
 
 .Pic3 img {
-  max-width: 500px;
+  max-width: 100%;
+  aspect-ratio: 9/16;
   object-position: bottom;
   background: var(--Hide);
   z-index:2;
@@ -389,9 +391,5 @@ nav button {
 }
 
 
-@media screen and (max-width:1000px){
-.Pic3 img {
-  max-width: 300px;
- }
-}
+
 /* flex box, media queries, CSS variables */
