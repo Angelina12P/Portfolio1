@@ -65,10 +65,10 @@ nav {
 }
 /* Need to get these smaller. Also a bit hectic change them. */
 nav button {
-  margin: 2px;
-  height: 35px;
+  margin: 5px;
+  height: 30px;
   width: 200px;
-  padding:0 auto;
+  padding:20;
   Border:var(--borders); 
   display:flex;
   justify-content: space-around;
@@ -83,7 +83,7 @@ nav button {
 background-color: var(--Hide);
 font-size: xx-large;
 position:relative;
-top:-28px;
+top:-32px;
 color: black;
 width:300px;
 } 
