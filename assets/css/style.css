@@ -92,7 +92,8 @@ color: black;
 width:300px;
 text-shadow: 5px 5px 10px rgba(69, 67, 67, 0.428);
 } 
-/* text shadow?? */
+
+
 .Link1 a:hover, .Linkedin a:hover, .Spotify a:hover{
   color: #0b9661;
   text-shadow:var(--shadow);
